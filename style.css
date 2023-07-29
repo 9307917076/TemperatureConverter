@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:black;
+    font-family: monospace, sans-serif;
+    color: #1c749a;
+}
+
+.container {
+    background: rgb(198 222 230 / 99%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 32px;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    background-color:rgba(152, 206, 216, 0.3);
+    color: brown;
+    padding: 8px;
+    border-radius: 12px;
+    display: block;
+    border: 2 px solid rgba(96, 181, 198, 0.3);
+
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
+    outline: none;
+    background: rgba(0, 212, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: darkblue;
+    font-size: 18px;
+}
+
+
+input::placeholder {
+    color: crimson;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
